@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+    <head>
+        <title>Podcasts</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type='text/css' href="{% static 'CSS/stylesheet.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        </head>
+<body>
+    <div class="searchbar">
+        <input type="search" class="search" placeholder="Search through more podcasts and episodes..."/>
+        <i class="fa fa-search"></i>
+        <label> Welcome Bruce </label>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" class="logo"><img src="{% static 'Images/Logo.jpg' %}" /><span class="nav-item">Podcast</span></a></li>
+            <hr>
+            <li><a href="#" class="menu"><i class="fa-solid fa-home"></i><span class="nav-item">Home</span></a></li>
+            <li><a href="#" class="menu"><i class="fa-solid fa-globe"></i><span class="nav-item">Discover</span></a></li>
+            <hr>
+            <p class="subhead">Your Activity</p>
+            <div class="your-menu">
+                <li><a href="#" class="menu1"><i class="fa-solid fa-snowflake"></i><span class="nav-item">My podcasts</span></a></li>
+                <li><a href="#" class="menu1"><i class="fa-solid fa-heart"></i><span class="nav-item">Favourites</span></a></li>
+                <li><a href="#" class="menu1"><i class="fa-solid fa-layer-group"></i><span class="nav-item">Queue</span></a></li>
+            </div>
+            <div class="logout">
+                <li><a href="#" class="menu"><i class="fa-solid fa-sign-out"></i><span class="nav-item">Logout</span></a></li>
+            </div>
+            
+        </ul>
+    </nav>
+    <div class="main-section">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
+.container1{
+    background-color:black;
+    padding: 20px;
+    position:relative;
+    display: flex;
+    overflow-x: scroll;
+    border-top: 0.2px solid rgb(19, 0, 144);
+}
+.item{
+    width:220px;
+}
+.item-blw p{
+    width:170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+p{
+    color: #ffffff;
+    font-size: 20px;
+}
+.item-blw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item-blw svg{
+    transform: rotate(90deg);
+    cursor: pointer;
+    margin-right:20px;
+    color:white;
+}
+.item img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.item p{
+    text-align: center;
+}
+h2{
+    color:white;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    margin-left: 10px;
+    overflow-x: hidden;
+    line-height: 26px;
+}
+h4{
+    color: rgb(132, 132, 132);
+    font-family: 'PT Serif', serif;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+::-webkit-scrollbar {
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #004e98;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0b00a7;
+    height: 10px;
+
+}

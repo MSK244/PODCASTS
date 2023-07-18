@@ -1,0 +1,87 @@
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,1,1,1) 45%, rgba(0,59,94,1) 81%, rgba(0,159,255,0.8240546218487395) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+.title-header{
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+.title-item{
+    margin-left: 50px;
+}
+.title-image img{
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 15px rgb(15, 15, 15);
+    width: 120px;
+    height: 120px;
+}
+.title-items{
+    color:white;
+    margin:auto 0px auto 0px;
+    line-height: 40px;
+}
+.pod-main{
+    margin:10px;
+    height: 500px;
+}
+.pod-ep-lst{
+    width:55%;
+    height: 500px;
+    overflow: auto;
+}
+.podc-info{
+    width:30%;
+    height:500px;
+    top:0;
+    transform: translate(900px,-500px);
+    color: white;
+    /* margin-left: 20px; */
+    padding-left: 50px;
+    border-left: 2px solid rgba(0,159,255,0.8240546218487395)
+}
+.pod-abt h1{
+    margin-bottom:10px;
+}
+.ep-cnt{
+    font-family: 'Asap', sans-serif;
+    display:flex;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-top: 1px solid #0c9eff;
+    overflow: auto;
+}
+.ep-cnt-img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.ep-cnt-main{
+    margin-left:20px;
+}
+.ep-cnt-main-desc{
+    margin-top:10px
+}
+.ep-cnt-main{
+    color:white;
+}
+.pod-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:10px;
+}
+.pod-btns button{
+    padding: 10px;
+    border: 0px;
+    background-color: white;
+}
+.pod-btns button:hover{
+    background-color: rgb(194, 194, 194);
+}

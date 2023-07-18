@@ -1,0 +1,124 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type='text/css' href="{% static 'CSS/Home_menu.css' %}">
+<br/>
+<h2>Trending podcasts in all genres..</h2>
+<h4>The most popular podcasts overall now</h4>
+<div class="container1">
+        {% for i in text %}
+            <div class="item">
+                <a href="http://127.0.0.1:8000/episodes/"><img src="{% static 'Images/goku.jpg' %}" /></a>
+                <br/>
+                <div class="item-blw">
+                    <p>{{i}}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+            </div>
+        {% endfor %}
+</div>
+<br/>
+<h2>Genre-based podcasts..</h2>
+<h4>Categorized podcasts based on their genre</h4>
+<div class="container1">
+        {% for i in text %}
+            <div class="item">
+                <img src="{% static 'Images/goku1.jpg' %}" />
+                <br/>
+                <div class="item-blw">
+                    <p>{{i}}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+            </div>
+        {% endfor %}
+</div>
+<br/>
+<h2>Popular podcasts..</h2>
+<h4>The most popular podcasts based on overall popularity of listeners</h4>
+<div class="container1">
+        {% for i in text %}
+            <div class="item">
+                <img src="{% static 'Images/goku1.jpg' %}" />
+                <br/>
+                <div class="item-blw">
+                    <p>{{i}}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+            </div>
+        {% endfor %}
+</div>
+<br/>
+<h2>New Releases</h2>
+<h4>Discover the latest episodes and series</h4>
+<div class="container1">
+        {% for i in text %}
+            <div class="item">
+                <img src="{% static 'Images/goku1.jpg' %}" />
+                <br/>
+                <div class="item-blw">
+                    <p>{{i}}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+            </div>
+        {% endfor %}
+</div>
+<br>
+<h2>Podcast Networks</h2>
+<h4>Podcasts based on the podcast networks or organisation</h4>
+<div class="container1">
+    {% for i in text %}
+        <div class="item">
+            <img src="{% static 'Images/goku.jpg' %}" />
+            <br/>
+            <div class="item-blw">
+                    <p>{{i}}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+        </div>
+    {% endfor %}
+</div>
+<br>
+<h2>Personalised Recommendations</h2>
+<h4>Based on listening history, preferences, and interests</h4>
+<div class="container1">
+    {% for i in text %}
+        <div class="item">
+            <img src="{% static 'Images/goku.jpg' %}" />
+            <br/>
+            <div class="item-blw">
+                    <p>{{i}}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+        </div>
+    {% endfor %}
+</div>
+<br>
+<h2>Podcasts for Kids</h2>
+<h4>Specifically for podcasts aimed at children</h4>
+<div class="container1">
+    {% for i in text %}
+        <div class="item">
+            <img src="{% static 'Images/goku.jpg' %}" />
+            <br/>
+            <div class="item-blw">
+                    <p>{{i}}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
